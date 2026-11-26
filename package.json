@@ -1,0 +1,16 @@
+{
+  "name": "attention-discord-styles",
+  "version": "1.0.0",
+  "description": "Discord z motywami: niebieski, Nitro, MONO i inne",
+  "main": "main.js",
+  "author": "shvga",
+  "scripts": { "start": "electron .", "dist": "electron-builder --win portable" },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.shvga.discordstyles",
+    "productName": "Discord Styles",
+    "win": { "target": "portable" },
+    "files": ["main.js", "themes.js", "package.json"],
+    "artifactName": "DiscordStyles.exe"
+  }
+}
